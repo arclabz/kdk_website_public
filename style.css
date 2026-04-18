@@ -28,7 +28,6 @@
 }
 
 /* === BASE === */
-html { zoom: 1.5; }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -407,6 +406,11 @@ a { text-decoration: none; color: inherit; }
 }
 .footer-attrib a { color: var(--muted); text-decoration: underline; }
 
+/* === RESPONSIVE – Desktop zoom === */
+@media (min-width: 901px) {
+  html { zoom: 1.5; }
+}
+
 /* === RESPONSIVE – Tablet === */
 @media (max-width: 900px) {
   .hero {
@@ -417,11 +421,12 @@ a { text-decoration: none; color: inherit; }
   .hero-buttons { justify-content: center; }
   .hero-cards { height: 220px; margin-top: 2rem; }
   .hero-card { width: 90px; }
-  .c1 { top: 20px; left: 10px; }
-  .c2 { top: 5px;  left: 110px; }
-  .c3 { top: 80px; left: 60px; }
+  .c1 { top: 20px;  left: 10px; }
+  .c2 { top: 5px;   left: 110px; }
+  .c3 { top: 80px;  left: 60px; }
   .c4 { top: 120px; left: 10px; }
   .c5 { top: 110px; left: 160px; }
+  .c6 { top: 10px;  left: 210px; }
 
   .section-split { grid-template-columns: 1fr; }
   .split-text .section-title { text-align: center; }
