@@ -57,6 +57,23 @@ h1, h2, h3, .logo, .section-title, .logo-full {
 
 a { text-decoration: none; color: inherit; }
 
+/* === EVENT-BANNER === */
+#event-banner {
+  background: linear-gradient(90deg, #2a1f40, #1e1533, #2a1f40);
+  border-bottom: 2px solid var(--gold-dark);
+  color: var(--text);
+  text-align: center;
+  padding: 0.65rem 1rem;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+#event-banner strong { color: var(--gold); }
+.event-banner-icon { font-size: 1.2rem; }
+
 /* === BUTTONS === */
 .btn {
   display: inline-flex;

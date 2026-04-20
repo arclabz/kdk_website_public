@@ -1,5 +1,16 @@
 // KDK Website
 
+/* === EVENT-BANNER (01.05.–03.05.2026) === */
+(function () {
+  const dev   = new URLSearchParams(window.location.search).has('dev');
+  const now   = new Date();
+  const start = new Date('2026-05-01');
+  const end   = new Date('2026-05-04');
+  if (dev || (now >= start && now < end)) {
+    document.getElementById('event-banner').style.display = 'flex';
+  }
+})();
+
 /* === SCROLL FADE-IN === */
 const fadeEls = document.querySelectorAll('.section');
 const observer = new IntersectionObserver(entries => {
